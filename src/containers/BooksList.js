@@ -4,16 +4,20 @@ function BooksList() {
   return (
     <div>
       <table border="1">
-        <tr>
-          <th><td>Book ID</td></th>
-          <th><td>Book Title</td></th>
-          <th><td>Book Category</td></th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Head First Mathematics</td>
-          <td>Maths</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Book ID</th>
+            <th>Book Title</th>
+            <th>Book Category</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Head First Mathematics</td>
+            <td>Maths</td>
+          </tr>
+        </tbody>
       </table>
     </div>
   );
