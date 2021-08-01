@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Book from '../components/Book';
 
-function BooksList() {
+function BooksList({ books }) {
   return (
     <div>
       <table border="1">
@@ -16,13 +16,13 @@ function BooksList() {
         </thead>
         <tbody>
           {
-            books.map(book => (
-              <Book 
-            key={book.bookId}
-            bookId={book.bookId}
-            title={book.title}
-            category={book.category}
-          />
+            books.map((book) => (
+              <Book
+                key={book.bookId}
+                bookId={book.bookId}
+                title={book.title}
+                category={book.category}
+              />
             ))
           }
         </tbody>
@@ -32,12 +32,12 @@ function BooksList() {
 }
 
 BooksList.propTypes = {
-  books: PropTypes.arrayOf(PropTypes.object.isRequired),
+  books: PropTypes.arrayOf(PropTypes.object),
 };
 
 BooksList.defaultProps = {
   books: [],
-}
+};
 
 const mapStateToProps = ({ books }) => ({
   books,
