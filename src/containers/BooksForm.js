@@ -2,16 +2,7 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { createBook } from '../actions/index';
-
-const bookCategories = [
-  'Action',
-  'Biography',
-  'History',
-  'Horror',
-  'Kids',
-  'Learning',
-  'Sci-Fi',
-];
+import { bookCategories } from '../helpers/index';
 
 function BooksForm({ createBook }) {
   const [title, setTitle] = useState('');
@@ -42,14 +33,14 @@ function BooksForm({ createBook }) {
   return (
     <>
       <form>
-        <div>
+        <div className="input-group">
           <input
             type="text"
             value={title}
             onChange={handleTitleChange}
           />
         </div>
-        <div>
+        <div className="input-group">
           <select
             name="book-cat"
             id="categories"
