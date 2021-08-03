@@ -1,0 +1,67 @@
+.filter {
+  text-align: center;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  width: 91%;
+  margin: auto;
+}
+
+.inputTitle input {
+  width: 97%;
+  height: 30px;
+  padding: 8px;
+  font-size: 17px;
+  border: solid 1px #e8e8e8;
+  border-radius: 5px;
+}
+
+.inputCategory select {
+  width: 90%;
+  height: 47px;
+  padding: 8px;
+  font-size: 17px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.addBook {
+  background: #0290ff;
+  color: white;
+  font-size: 17px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 5px;
+}
+
+.addBook:hover {
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+@media (max-width: 680px) {
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 91%;
+    margin: auto;
+    grid-gap: 10px;
+  }
+
+  .inputTitle input {
+    width: 234px;
+  }
+
+  .inputCategory select {
+    width: 250px;
+  }
+
+  .addBook {
+    height: 50px;
+    width: 150px;
+    margin: auto;
+  }
+}
