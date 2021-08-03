@@ -13,7 +13,7 @@ const initialState = {
     {
       bookId: Math.floor(Math.random() * 1000),
       title: 'Divine Comedy',
-      category: 'Comedy',
+      category: 'Action',
     },
   ],
 };

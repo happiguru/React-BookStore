@@ -9,7 +9,7 @@ export const bookCategories = [
 ];
 
 export const getFilteredBooks = (books, filter) => {
-  if (filter === 'ALL') {
+  if (filter === 'All') {
     return books;
   }
   return books.filter((book) => book.category === filter);
