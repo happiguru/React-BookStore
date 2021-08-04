@@ -25,3 +25,22 @@ code {
     'Courier New',
     monospace;
 }
+
+.general {
+  font-family: sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+
+.header-container,
+.header,
+.user {
+  display: flex;
+}
+
+.header__book_link,
+.header__logo,
+.header__link {
+  opacity: 1;
+}

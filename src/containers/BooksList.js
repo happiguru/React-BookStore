@@ -5,6 +5,7 @@ import Book from '../components/Book';
 import { removeBook, changeFilter } from '../actions/index';
 import CategoryFilter from '../components/CategoryFilter';
 import { getFilteredBooks } from '../helpers/index';
+import './BooksList.css';
 
 const BooksList = ({
   books,
@@ -24,24 +25,29 @@ const BooksList = ({
     />
   ));
   return (
-    <div>
-      <CategoryFilter
-        handleFilterChange={changeFilter}
-      />
-      <table border="1">
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Book Title</th>
-            <th>Book Category</th>
-            <th>Remove Book</th>
-          </tr>
-        </thead>
-        <tbody>
-          {book}
-        </tbody>
-      </table>
-    </div>
+    <>
+      <div className="header-container">
+        <ul className="header">
+          <li className="header__logo header__link general">
+            Bookstore CMS
+          </li>
+          <li className="header__book_link header__link general">
+            BOOKS
+          </li>
+          <li className="header__link list-text general">
+            <CategoryFilter
+              handleFilterChange={changeFilter}
+            />
+          </li>
+        </ul>
+        <div className="user">
+          <span className="user-logo" />
+        </div>
+      </div>
+      <div className="books-container filter-container">
+        {book}
+      </div>
+    </>
   );
 };
 
