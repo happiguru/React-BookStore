@@ -16,13 +16,9 @@
 
 .header__link {
   font-family: sans-serif, Montserrat;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   cursor: pointer;
   font-weight: normal;
   letter-spacing: 1.9px;
-  color: #121212;
   font-size: 13px;
   height: 16px;
   margin: 20px;

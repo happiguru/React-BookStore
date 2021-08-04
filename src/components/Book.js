@@ -8,10 +8,9 @@ const Book = ({
   <div className="book-container">
     <div className="book-details">
       <div>
-        <div>{bookId}</div>
         <div>{category}</div>
-        <div className="title">{title}</div>
-        <div>Suzannie Collins</div>
+        <div className="title list-text general">{title}</div>
+        <div className="author list-text">Suzannie Collins</div>
       </div>
       <div className="actions">
         <button type="button">Comments</button>
@@ -35,15 +34,15 @@ const Book = ({
       <div className="complete">
         <div className="circle" />
         <div className="complete-value">
-          <span className="percent">
+          <span className="percent general list-text">
             {`${Math.floor(Math.random() * 100)} %`}
           </span>
-          <span className="faded-text">Completed</span>
+          <span className="faded-text general list-text">Completed</span>
         </div>
       </div>
       <div className="update">
-        <span className="title">CURRENT CHAPTER</span>
-        <span className="chapter">{`Chapter ${Math.floor(Math.random() * 34 + 1)}`}</span>
+        <span className="title general list-text">CURRENT CHAPTER</span>
+        <span className="chapter general list-text">{`Chapter ${Math.floor(Math.random() * 34 + 1)}`}</span>
         <button type="button">UPDATE PROGRESS</button>
       </div>
     </div>
