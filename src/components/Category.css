@@ -1,13 +1,15 @@
-.filter {
+/* .filter {
   text-align: right;
   margin: 20px 0;
-}
+} */
 
 .selectFilter {
-  width: 190px;
-  height: 38px;
-  padding: 7px;
-  font-size: 17px;
+  width: 150px;
+  height: 30px;
+  padding: 5px;
+  font-size: 15px;
+  margin-top: -30px;
+  margin-left: -20px;
   border: solid 1px #e8e8e8;
   border-radius: 5px;
   background-color: #fff;
