@@ -9,8 +9,9 @@ const Book = ({
     <div className="book-details">
       <div>
         <div>{bookId}</div>
-        <div className="title">{title}</div>
         <div>{category}</div>
+        <div className="title">{title}</div>
+        <div>Suzannie Collins</div>
       </div>
       <div className="actions">
         <button type="button">Comments</button>

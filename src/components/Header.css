@@ -46,7 +46,8 @@
 .user {
   width: 25px;
   height: 25px;
-  padding: 10px;
+  margin-right: 26px;
+  padding: 5px;
   border: solid 1px #e8e8e8;
   border-radius: 50%;
   display: flex;

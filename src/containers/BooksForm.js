@@ -32,7 +32,8 @@ function BooksForm({ createBook }) {
   };
 
   return (
-    <div className="filter">
+    <div className="selectfilter">
+      <h4 className="form-title">ADD NEW BOOK</h4>
       <form>
         <div className="inputTitle">
           <input
