@@ -17,6 +17,8 @@ This projects implements the use of React-redux library to build a Book Store ap
 - npm
 - CSS3
 - JavaScript/ES6
+
+![screenshot](./src/images/pict.png)
 ## Live Demo
 
 [Live Demo Link](https://book-magician.herokuapp.com/)
