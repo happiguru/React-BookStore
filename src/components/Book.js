@@ -8,12 +8,12 @@ const Book = ({
   <div className="book-container">
     <div className="book-details">
       <div>
-        <div>{category}</div>
+        <div className="category general list-text">{category}</div>
         <div className="title list-text general">{title}</div>
         <div className="author list-text">Suzannie Collins</div>
       </div>
       <div className="actions">
-        <button type="button">Comments</button>
+        <button type="button" className="general">Comments</button>
         <button
           onClick={() => {
             const book = {
@@ -24,10 +24,11 @@ const Book = ({
             handleRemoveBook(book);
           }}
           type="button"
+          className="general"
         >
           Remove
         </button>
-        <button type="button">Edit</button>
+        <button type="button" className="general">Edit</button>
       </div>
     </div>
     <div className="complete-container">
@@ -43,7 +44,7 @@ const Book = ({
       <div className="update">
         <span className="title general list-text">CURRENT CHAPTER</span>
         <span className="chapter general list-text">{`Chapter ${Math.floor(Math.random() * 34 + 1)}`}</span>
-        <button type="button">UPDATE PROGRESS</button>
+        <button type="button" className="general">UPDATE PROGRESS</button>
       </div>
     </div>
   </div>
